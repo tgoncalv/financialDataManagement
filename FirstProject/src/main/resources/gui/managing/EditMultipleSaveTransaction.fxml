@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="106.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.EditMultipleSaveTransactionController">
+   <children>
+      <Text layoutX="14.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #CFCFCF;" text="Selected Account :" />
+      <ChoiceBox fx:id="accountChoice" layoutX="115.0" layoutY="7.0" prefWidth="150.0" />
+      <Text layoutX="11.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #CFCFCF;" text="Edit the amount :" />
+      <TextField fx:id="amountText" layoutX="115.0" layoutY="37.0" prefHeight="25.0" prefWidth="150.0" promptText="enter the amount..." />
+      <Button fx:id="validate" defaultButton="true" layoutX="72.0" layoutY="71.0" mnemonicParsing="false" onAction="#Validate" text="Validate" />
+      <Button fx:id="cancel" cancelButton="true" layoutX="141.0" layoutY="71.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Cancel" />
+   </children>
+</AnchorPane>

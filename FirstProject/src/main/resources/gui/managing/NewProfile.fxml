@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="102.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.NewProfileController">
+   <children>
+      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="New profile name :" />
+      <TextField fx:id="newProfileNameTextField" layoutX="118.0" layoutY="26.0" prefHeight="25.0" prefWidth="150.0" promptText="enter the name..." />
+      <Button fx:id="newProfileValidate" defaultButton="true" layoutX="72.0" layoutY="63.0" mnemonicParsing="false" onAction="#NewProfileValidate" text="Validate" />
+      <Button fx:id="newProfileCancel" cancelButton="true" layoutX="151.0" layoutY="63.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Cancel" />
+   </children>
+</AnchorPane>

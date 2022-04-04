@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="68.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.AddLossesController">
+   <children>
+      <Text layoutX="12.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Lost amount of money :" />
+      <TextField fx:id="amountText" layoutX="146.0" layoutY="6.0" prefHeight="25.0" prefWidth="119.0" promptText="enter the amount..." />
+      <Button fx:id="validate" defaultButton="true" layoutX="72.0" layoutY="36.0" mnemonicParsing="false" onAction="#Validate" text="Validate" />
+      <Button fx:id="cancel" cancelButton="true" layoutX="151.0" layoutY="36.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Cancel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="68.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.DeleteSaveTransactionController">
+	<children>
+		<Text layoutX="23.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Are you sure to delete this transaction ?" />
+		<Button fx:id="validate" defaultButton="true" layoutX="63.0" layoutY="36.0" mnemonicParsing="false" onAction="#Validate" text="Validate" />
+		<Button fx:id="cancel" cancelButton="true" layoutX="134.0" layoutY="36.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Cancel" />
+	</children>
+</AnchorPane>

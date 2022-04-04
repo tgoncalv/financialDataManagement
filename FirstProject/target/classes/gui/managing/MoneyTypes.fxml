@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="262.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.MoneyTypesController">
+   <children>
+      <ListView fx:id="moneyTypesList" focusTraversable="false" layoutX="18.0" layoutY="13.0" prefHeight="200.0" prefWidth="200.0">
+         <contextMenu>
+            <ContextMenu fx:id="contextMenu">
+              <items>
+                <MenuItem fx:id="createNewMoney" mnemonicParsing="false" onAction="#createMoney" text="Create a new money" />
+                  <MenuItem fx:id="deleteMoney" disable="true" mnemonicParsing="false" onAction="#deleteMoney" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu></ListView>
+      <Button fx:id="exitButton" cancelButton="true" layoutX="91.0" layoutY="223.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="25.0" prefWidth="54.0" text="Exit" />
+   </children>
+</AnchorPane>

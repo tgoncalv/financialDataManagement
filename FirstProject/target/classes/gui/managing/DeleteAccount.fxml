@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="295.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.DeleteAccountController">
+   <children>
+      <Text layoutX="41.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Select the account to delete :" />
+      <ListView fx:id="accountList" focusTraversable="false" layoutX="41.0" layoutY="40.0" prefHeight="205.0" prefWidth="200.0" />
+      <Button fx:id="deleteAccountValidate" defaultButton="true" layoutX="72.0" layoutY="259.0" mnemonicParsing="false" onAction="#deleteAccountValidate" text="Validate" />
+      <Button fx:id="deleteAccountCancel" cancelButton="true" layoutX="151.0" layoutY="259.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Cancel" />
+   </children>
+</AnchorPane>

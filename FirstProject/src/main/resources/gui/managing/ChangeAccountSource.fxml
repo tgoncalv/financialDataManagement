@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="102.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.ChangeAccountSourceController">
+   <children>
+      <Text layoutX="12.0" layoutY="43.0" strokeType="OUTSIDE"  style="-fx-fill: #CFCFCF;" strokeWidth="0.0" text="New source :" />
+      <TextField fx:id="textField" layoutX="88.0" layoutY="26.0" prefHeight="25.0" prefWidth="182.0" promptText="enter the source..." />
+      <Button fx:id="validate" defaultButton="true" layoutX="72.0" layoutY="63.0" mnemonicParsing="false" onAction="#NewMoneyValidate" text="Validate" />
+      <Button fx:id="cancel" cancelButton="true" layoutX="151.0" layoutY="63.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Cancel" />
+   </children>
+</AnchorPane>

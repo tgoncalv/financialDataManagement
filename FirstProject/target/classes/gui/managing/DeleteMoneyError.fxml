@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="77.0" prefWidth="198.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.DeleteMoneyErrorController">
+   <children>
+      <Button fx:id="okButton" cancelButton="true" layoutX="73.0" layoutY="45.0" mnemonicParsing="false" onAction="#newMoneyCancel" text="Cancel" />
+      <TextFlow layoutY="7.0" prefHeight="46.0" prefWidth="198.0" textAlignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Can't delete this money because used by some accounts !" textAlignment="CENTER" wrappingWidth="198.685546875" />
+         </children>
+      </TextFlow>
+   </children>
+</AnchorPane>

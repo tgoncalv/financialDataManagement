@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="172.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.TransactionController">
+   <children>
+      <Text layoutX="39.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Depart amount :" />
+      <TextField fx:id="amountText" layoutX="130.0" layoutY="6.0" prefHeight="25.0" prefWidth="118.0" promptText="enter the amount..." />
+      <Text layoutX="6.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Linked account name :" />
+      <ChoiceBox fx:id="linkChoice" layoutX="131.0" layoutY="38.0" prefHeight="25.0" prefWidth="172.0" />
+      <Text layoutX="39.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Arrival amount :" />
+      <TextField fx:id="arrivalAmountText" layoutX="130.0" layoutY="72.0" prefHeight="25.0" prefWidth="118.0" promptText="enter the amount..." />
+      <Text layoutX="9.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Transaction's reason :" />
+      <TextField fx:id="reasonText" layoutX="130.0" layoutY="103.0" prefHeight="25.0" prefWidth="172.0" promptText="enter the reason..." />
+      <Button fx:id="validate" defaultButton="true" layoutX="88.0" layoutY="139.0" mnemonicParsing="false" onAction="#validate" text="Validate" />
+      <Button fx:id="cancel" cancelButton="true" layoutX="167.0" layoutY="139.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Cancel" />
+   </children>
+</AnchorPane>

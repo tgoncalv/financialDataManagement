@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="68.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.managing.EditSaveTransactionController">
+   <children>
+      <Text layoutX="12.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0"  style="-fx-fill: #CFCFCF;" text="Edit the amount :" />
+      <TextField fx:id="amountText" layoutX="108.0" layoutY="6.0" prefHeight="25.0" prefWidth="138.0" promptText="enter the amount..." />
+      <Button fx:id="validate" defaultButton="true" layoutX="55.0" layoutY="36.0" mnemonicParsing="false" onAction="#Validate" text="Validate" />
+      <Button fx:id="cancel" cancelButton="true" layoutX="133.0" layoutY="36.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Cancel" />
+   </children>
+</AnchorPane>
